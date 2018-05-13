@@ -1,30 +1,32 @@
 # 1. Character Encoding
 
-PHP code **MUST** use only UTF-8 without BOM.
+All files **MUST** use only UTF-8 without BOM.
 
 
 # 2. Directory Structures
 
+All directories **MUST** be named in `Studly_Caps`.
+
 Follow the following structures for any module:
-- /modules/[MODULE_NAME]/
-  - language
-  - js
+- /modules/Module_Name/
   - css
-  - functions
-  - metadata
-  - views
-  - tpls
   - Dashlets
+  - functions
+  - js
+  - language
+  - metadata
+  - samples
   - SugarFeeds
   - tmp
-  - samples
+  - tpls
+  - views
 
 
 # 3. Files
 
 All files **MUST** be named in `StudlyCaps`.
 
-All PHP files **MUST** use the Unix LF (linefeed) line ending.
+All files **MUST** use the Unix LF (linefeed) line ending.
 
 All PHP files **MUST** start with `<?php` tag and **MUST** end with `?>` tag.
 

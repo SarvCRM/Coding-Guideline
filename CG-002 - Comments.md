@@ -41,8 +41,8 @@ Each developer **MUST** indicate start and end of his/her code insertion with th
 
 There **MUST NOT** be any comment on the following directories:
 - /cache/*
-- /modules/[MODULE_NAME]/language/
-- /modules/[MODULE_NAME]/metadata/
+- /modules/Module_Name/language/
+- /modules/Module_Name/metadata/
 
 
 
