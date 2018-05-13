@@ -323,6 +323,7 @@ $firstVar = 1;
 $firstVar += 1;
 $firstVar .= '1';
 $firstVar++;
+$firstVar = $firstVar.$secondVar;
 $firstVar = array();
 $firstVar = array(
 	'first',

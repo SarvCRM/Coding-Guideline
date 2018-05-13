@@ -7,7 +7,7 @@ All files **MUST** use only UTF-8 without BOM.
 
 All directories **MUST** be named in `Studly_Caps`.
 
-Follow the following structures for any module:
+Follow the following structure for any module:
 - /modules/Module_Name/
   - css
   - Dashlets
