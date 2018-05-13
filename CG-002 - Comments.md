@@ -9,6 +9,7 @@ All JS comments **MUST** be encapsulated in `/**/`.
 /* REASON FOR CHANGE */
 // developers code
 /* END */
+
 // previous code
 ~~~
 
@@ -20,28 +21,28 @@ All comments except one-line comments in PHP **MUST** use `/**/` only.
 
 All lines between `/*` and `*/` **MUST** start with ` * `. Mind the space before and after `*`.
 
-`DeveloperName`: Each developer **MUST** indicate start and end of his/her code insertion with the exact following pattern:
-
-`DeveloperName` **MUST NOT** indented.
+Each developer **MUST** indicate start and end of his/her code insertion with the exact following pattern which **MUST NOT** be indented.
 
 ~~~php
 <?php
-// previous code
+	// previous code
+
 //******************************************//
 //	Added By FirstName LastName
 //	Jan 5, 2000
 //******************************************//
 // REASON FOR CHANGE
-// developers code
+	// developers code
 //******************************************//
-// previous code
+
+	// previous code
 ?>
 ~~~
 
 There **MUST NOT** be any comment on the following directories:
-	- /cache/*
-	- /modules/[MODULE_NAME]/language/
-	- /modules/[MODULE_NAME]/metadata/
+- /cache/*
+- /modules/[MODULE_NAME]/language/
+- /modules/[MODULE_NAME]/metadata/
 
 
 
