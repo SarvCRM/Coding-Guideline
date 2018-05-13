@@ -1,4 +1,4 @@
-# 1. Keywords and True/False/Null
+# 1. Table Definition
 
 All table names **MUST** be in `lower_case`.
 
