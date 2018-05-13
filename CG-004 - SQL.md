@@ -1,12 +1,12 @@
 # 1. Keywords and True/False/Null
 
-All tables **MUST** be use `InnoDB`.
+All table names **MUST** be in `lower_case`.
 
-All tables names **MUST** be in `lower_case`.
+All tables **MUST** use `InnoDB` as engine.
 
-All tables **MUST** user `utf8` for charset.
+All tables **MUST** user `utf8` as charset.
 
-All tables **MUST** user `utf8_unicode_ci` for collate.
+All tables **MUST** user `utf8_unicode_ci` as collate.
 
 ~~~sql
 -- --------------------------------------------------------
