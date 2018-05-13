@@ -1,40 +1,4 @@
-# 1. Character Encoding
-
-PHP code **MUST** use only UTF-8 without BOM.
-
-
-
-
-# 2. Files
-
-All files **MUST** be named in `StudlyCaps`.
-
-All PHP files **MUST** use the Unix LF (linefeed) line ending.
-
-All PHP files **MUST** start with `<?php` tag and **MUST** end with `?>` tag.
-
-There **MUST NOT** be any empty lines after closing tag.
-
-Any change to .css and .js files **MUST** affect the version number on file name. e.g. FileName_v1.1.css
-
-
-# 3. Lines
-
-There **MUST NOT** be a hard limit on line length.
-
-There **MUST NOT** be trailing whitespace at the end of any line.
-
-There **MUST NOT** be any blank line.
-
-There **MUST NOT** be more than one statement per line.
-
-
-# 4. Indenting
-
-Code **MUST** use only tabs for indentation (8 spaces).
-
-
-# 5. Keywords and True/False/Null
+# 1. Keywords and True/False/Null
 
 PHP [keywords] **MUST** be in lower case.
 
@@ -43,7 +7,7 @@ The PHP constants `true`, `false`, and `null` **MUST** be in lower case.
 [keywords]: http://php.net/manual/en/reserved.keywords.php
 
 
-# 6. Classes
+# 2. Classes
 
 Class names **MUST** be declared in `StudlyCaps`.
 
@@ -51,12 +15,12 @@ The opening brace for the class **MUST** go on its own line; the closing brace f
 the next line after the body.
 
 
-## 6.1. Extends and Implements
+## 2.1. Extends and Implements
 
 The `extends` and `implements` keywords **MUST** be declared on the same line as the class name.
 
 
-## 6.2. Properties, Constants and Variables
+## 7.2. Properties, Constants and Variables
 
 Class constants **MUST** be declared in all upper case with underscore separators.
 
@@ -80,7 +44,7 @@ class ClassName extends ParentClass implements \ArrayAccess, \Countable
 ~~~
 
 
-## 6.3. Methods and Functions
+## 2.3. Methods and Functions
 
 Method names **MUST** be declared in `StudlyCaps()`.
 
@@ -124,7 +88,7 @@ class ClassName
 ~~~
 
 
-## 6.4. `abstract`, `final`, and `static`
+## 2.4. `abstract`, `final`, and `static`
 
 When present, the `abstract` and `final` declarations **MUST** precede the visibility declaration.
 
@@ -149,7 +113,7 @@ abstract class ClassName
 ?>
 ~~~
 
-## 6.5. Method and Function Calls
+## 2.5. Method and Function Calls
 
 When making a method or function call, there **MUST NOT** be a space between the method or function name
 and the opening parenthesis, there **MUST NOT** be a space after the opening parenthesis.
@@ -179,7 +143,7 @@ $fistVar->FirstFunc(
 ~~~
 
 
-# 7. Control Structures
+# 3. Control Structures
 
 There **MUST** be one space after the control structure keyword.
 
@@ -197,7 +161,7 @@ The body of each structure **MUST** be enclosed by braces. This standardizes how
 the likelihood of introducing errors as new lines get added to the body.
 
 
-## 7.1. `if`, `elseif`, `else`
+## 3.1. `if`, `elseif`, `else`
 
 An `if` structure looks like the following. Note the placement of parentheses, spaces, and braces.
 
@@ -221,7 +185,7 @@ else
 ~~~
 
 
-## 7.2. `switch`, `case`
+## 3.2. `switch`, `case`
 
 A `switch` structure looks like the following. Note the placement of parentheses, spaces, and braces.
 
@@ -242,7 +206,21 @@ switch ($expr)
 		// no break
 	case 2:
 	case 3:
-	case 4:
+	# 10. Directory Structures
+
+Follow the following structures for any module:
+	- /modules/[MODULE_NAME]/
+		- language
+		- js
+		- css
+		- functions
+		- metadata
+		- views
+		- tpls
+		- Dashlets
+		- SugarFeeds
+		- tmp
+		- samplescase 4:
 		echo 'Third case, return instead of break';
 		return;
 	default:
@@ -253,7 +231,7 @@ switch ($expr)
 ~~~
 
 
-## 7.3. `while`, `do while`
+## 3.3. `while`, `do while`
 
 A `while` statement looks like the following. Note the placement of parentheses, spaces, and braces.
 
@@ -279,7 +257,7 @@ while ($expr);
 ~~~
 
 
-## 7.4. `for`
+## 3.4. `for`
 
 A `for` statement looks like the following. Note the placement of parentheses, spaces, and braces.
 
@@ -293,7 +271,7 @@ for ($i=0; $i<10; $i++)
 ~~~
 
 
-## 7.5. `foreach`
+## 3.5. `foreach`
 
 A `foreach` statement looks like the following. Note the placement of parentheses, spaces, and braces.
 
@@ -307,7 +285,7 @@ foreach ($iterable as $key=>$value)
 ~~~
 
 
-## 7.6. `try`, `catch`
+## 3.6. `try`, `catch`
 
 A `try catch` block looks like the following. Note the placement of parentheses, spaces, and braces.
 
@@ -329,7 +307,7 @@ catch (OtherExceptionType $e)
 ~~~
 
 
-# 8. Operators and Assignment
+# 4. Operators and Assignment
 
 All Operatoors and Assignments **MUST** have a single space befor and after them.
 
@@ -352,62 +330,3 @@ $firstVar = array(
 	0 => 'third');
 ?>
 ~~~
-
-
-# 9. Comments
-
-All JS comments **MUST** be encapsulated in `/**/`.
-
-All one-line comments in PHP **MUST** use `// ` only. Mind the space after `//`.
-
-All comments except one-line comments in PHP **MUST** use `/**/` only.
-
-`/*` and `*/` **MUST** be on their own lines except for one-line comments in JS.
-
-All lines between `/*` and `*/` **MUST** start with ` * `. Mind the space before and after `*`.
-
-`DeveloperName`: Each developer **MUST** indicate start and end of his/her code insertion with the exact following pattern:
-
-`DeveloperName` **MUST NOT** indented.
-
-~~~php
-<?php
-// previous code
-//******************************************//
-//	Added By FirstName LastName
-//	Jan 5, 2000
-//******************************************//
-// REASON FOR CHANGE
-// developers code
-//******************************************//
-// previous code
-?>
-~~~
-
-There **MUST NOT** be any comment on the following directories:
-	- /cache/*
-	- /modules/[MODULE_NAME]/language/
-	- /modules/[MODULE_NAME]/metadata/
-
-
-# 10. Directory Structures
-
-Follow the following structures for any module:
-	- /modules/[MODULE_NAME]/
-		- language
-		- js
-		- css
-		- functions
-		- metadata
-		- views
-		- tpls
-		- Dashlets
-		- SugarFeeds
-		- tmp
-		- samples
-		
-
-
-
-
-
