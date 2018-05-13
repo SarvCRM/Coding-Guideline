@@ -2,6 +2,16 @@
 
 All JS comments **MUST** be encapsulated in `/**/`.
 
+~~~js
+// previous code
+
+/* Added By FirstName LastName - Jan 5, 2000 */
+/* REASON FOR CHANGE */
+// developers code
+/* END */
+// previous code
+~~~
+
 All one-line comments in PHP **MUST** use `// ` only. Mind the space after `//`.
 
 All comments except one-line comments in PHP **MUST** use `/**/` only.
