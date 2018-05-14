@@ -39,7 +39,7 @@ Each developer **MUST** indicate start and end of his/her code insertion with th
 ?>
 ~~~
 
-There **MUST NOT** be any comment on the following directories:
+There **MUST NOT** be any comment indicating developer whom changed/inserted the code on the following directories:
 - /cache/*
 - /modules/Module_Name/language/
 - /modules/Module_Name/metadata/
