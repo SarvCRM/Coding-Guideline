@@ -206,21 +206,7 @@ switch ($expr)
 		// no break
 	case 2:
 	case 3:
-	# 10. Directory Structures
-
-Follow the following structures for any module:
-	- /modules/[MODULE_NAME]/
-		- language
-		- js
-		- css
-		- functions
-		- metadata
-		- views
-		- tpls
-		- Dashlets
-		- SugarFeeds
-		- tmp
-		- samplescase 4:
+	case 4:
 		echo 'Third case, return instead of break';
 		return;
 	default:
